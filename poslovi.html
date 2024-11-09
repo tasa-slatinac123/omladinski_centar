@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poslovi</title>
+    <link rel="stylesheet" href="poslovi.css">
+</head>
+<body>
+    <script src="poslovi.js"></script>
+    <section id="part-time-poslovi">
+        <h2>Part-time Poslovi</h2>
+       
+        <div class="posao">
+            <h3 onclick="prikaziDetalje('posao1')">Pomoć u kafiću</h3>
+            <div id="posao1" class="detalji" style="display: none;">
+                <p>Potrebna osoba za pomoć u kafiću. Radno vrijeme od 10:00h-16:00h. Plata: 800 KM mjesečno.</p>
+            </div>
+        </div>
+       
+        <div class="posao">
+            <h3 onclick="prikaziDetalje('posao2')">Radnik u prodavnici</h3>
+            <div id="posao2" class="detalji" style="display: none;">
+                <p>Traži se radnik za rad u prodavnici. Smjene: 8:00h-16:00h. Plata: 900 KM mjesečno.</p>
+            </div>
+        </div>
+       
+        <button onclick="dodajPosao()">Dodaj novi posao</button>
+        <div id="novi-posao-forma" style="display: none;">
+            <h3>Unesi novi posao</h3>
+            <form id="posao-forma">
+                <label for="naziv-posla">Naziv Posla:</label>
+                <input type="text" id="naziv-posla" name="naziv-posla" required><br>
+                <label for="opis-posla">Opis Posla:</label>
+                <textarea id="opis-posla" name="opis-posla" required></textarea><br>
+                <button type="button" onclick="sacuvajPosao()">Sačuvaj</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

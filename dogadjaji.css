@@ -1,0 +1,20 @@
+.dogadjaj {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.dogadjaj h3 {
+    color: #4CAF50;
+    transition: color 0.3s;
+}
+
+.dogadjaj h3:hover {
+    color: #388E3C;
+}
+
+.detalji {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    border-left: 3px solid #4CAF50;
+}

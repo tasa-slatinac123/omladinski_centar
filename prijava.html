@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava korisnika</title>
+    <link rel="stylesheet" href="prijava.css">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="volonterske_akcije.html">Volonterske akcije</a></li>
+            <li><a href="dogadjaji.html">Događaji</a></li>
+            <li><a href="poslovi.html">Poslovi</a></li>
+            <li><a href="prijava.html">Prijava</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Forma za prijavu -->
+    <div class="form-container">
+        <h2>Prijava</h2>
+        <form action="process_login.php" method="post">
+            <div class="form-group">
+                <label for="username">Korisničko ime:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Lozinka:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Prijavi se</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Omladinska zajednica Prnjavor. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>

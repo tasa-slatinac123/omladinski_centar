@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <link rel="stylesheet" href="prijava.css"> <!-- Opciono, za stilizaciju -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registracija</h2>
+        <form action="process_register.php" method="post">
+            <label for="username">Korisničko ime:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Lozinka:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirm_password">Potvrdi lozinku:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+            <input type="submit" value="Registruj se">
+        </form>
+    </div>
+</body>
+</html>
